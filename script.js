@@ -1,128 +1,101 @@
-/* ==================================================
+/* =========================================================
    WESTBRIDGE — JAVASCRIPT
-================================================== */
+   ========================================================= */
 
+document.addEventListener("DOMContentLoaded", () => {
 
-/* ==================================================
-   SMOOTH SCROLLING
-================================================== */
+    /* Smooth navigation */
+    const navLinks = document.querySelectorAll('a[href^="#"]');
 
-document.querySelectorAll('a[href^="#"]').forEach(function (link) {
+    navLinks.forEach(link => {
+        link.addEventListener("click", function (event) {
+            const targetId = this.getAttribute("href");
 
-    link.addEventListener("click", function (event) {
+            if (targetId && targetId !== "#") {
+                const target = document.querySelector(targetId);
 
-        const targetId = this.getAttribute("href");
+                if (target) {
+                    event.preventDefault();
 
-        if (targetId === "#") {
-            return;
-        }
-
-        const target = document.querySelector(targetId);
-
-        if (target) {
-
-            event.preventDefault();
-
-            target.scrollIntoView({
-                behavior: "smooth",
-                block: "start"
-            });
-
-        }
-
-    });
-
-});
-
-
-/* ==================================================
-   PRICING BUTTONS
-================================================== */
-
-const pricingButtons = document.querySelectorAll(".pricing-button");
-
-pricingButtons.forEach(function (button) {
-
-    button.addEventListener("click", function () {
-
-        const plan = this.getAttribute("data-plan");
-
-        alert(
-            "You selected the " +
-            plan +
-            " plan.\n\nWestbridge membership checkout will be connected here."
-        );
-
-    });
-
-});
-
-
-/* ==================================================
-   SCROLL REVEAL
-================================================== */
-
-const revealElements = document.querySelectorAll(
-    ".card, .step, .founder-container, .pricing-card"
-);
-
-const revealObserver = new IntersectionObserver(
-
-    function (entries) {
-
-        entries.forEach(function (entry) {
-
-            if (entry.isIntersecting) {
-
-                entry.target.style.opacity = "1";
-                entry.target.style.transform = "translateY(0)";
-
-                revealObserver.unobserve(entry.target);
-
+                    target.scrollIntoView({
+                        behavior: "smooth",
+                        block: "start"
+                    });
+                }
             }
-
         });
-
-    },
-
-    {
-        threshold: 0.12
-    }
-
-);
+    });
 
 
-revealElements.forEach(function (element) {
+    /* Scroll reveal animation */
+    const revealElements = document.querySelectorAll(
+        ".about-card, .step, .feature-card, .pricing-card, .founder-container, .cta-content"
+    );
 
-    element.style.opacity = "0";
+    revealElements.forEach(element => {
+        element.classList.add("fade-in");
+    });
 
-    element.style.transform = "translateY(25px)";
+    const observer = new IntersectionObserver(
+        (entries, observerInstance) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add("visible");
+                    observerInstance.unobserve(entry.target);
+                }
+            });
+        },
+        {
+            threshold: 0.12
+        }
+    );
 
-    element.style.transition =
-        "opacity 0.7s ease, transform 0.7s ease";
-
-    revealObserver.observe(element);
-
-});
+    revealElements.forEach(element => {
+        observer.observe(element);
+    });
 
 
-/* ==================================================
-   NAVBAR SHADOW
-================================================== */
+    /* Pricing buttons */
+    const pricingButtons = document.querySelectorAll(".plan-button");
 
-const navbar = document.querySelector(".navbar");
+    pricingButtons.forEach(button => {
+        button.addEventListener("click", () => {
+            const plan =
+                button.dataset.plan ||
+                button.textContent.trim();
 
-window.addEventListener("scroll", function () {
+            alert(
+                `Welcome to Westbridge.\n\nYou selected: ${plan}\n\nSubscription checkout will be available when Westbridge launches.`
+            );
+        });
+    });
 
-    if (window.scrollY > 20) {
 
-        navbar.style.boxShadow =
-            "0 8px 30px rgba(36, 56, 45, 0.08)";
+    /* Get Started buttons */
+    const getStartedButtons = document.querySelectorAll(
+        ".nav-cta, .hero .btn-primary"
+    );
 
-    } else {
+    getStartedButtons.forEach(button => {
+        button.addEventListener("click", event => {
+            const href = button.getAttribute("href");
 
-        navbar.style.boxShadow = "none";
+            if (!href || href === "#") {
+                event.preventDefault();
 
-    }
+                const pricing = document.querySelector("#pricing");
 
+                if (pricing) {
+                    pricing.scrollIntoView({
+                        behavior: "smooth",
+                        block: "start"
+                    });
+                }
+            }
+        });
+    });
+
+
+    /* Small console confirmation */
+    console.log("Westbridge is running successfully.");
 });
