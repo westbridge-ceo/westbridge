@@ -2,46 +2,49 @@
 <html lang="en">
 
 <head>
-    <meta name="google-site-verification" content="psF99YTddhB5aSwHfKLKRGKCCEq-vSiOYa4lyEJ-xE" />
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <meta name="description"
-        content="Westbridge is a global learning platform built around curiosity, intelligent technology, and meaningful education.">
+        content="Westbridge is a modern learning platform that helps curious minds learn, understand, and grow with AI-powered quizzes and learning tools.">
 
     <meta name="keywords"
-        content="Westbridge, learning, education, AI learning, quizzes, artificial intelligence, global learning">
+        content="Westbridge, AI learning, AI quizzes, education, learning platform, study, quizzes">
 
     <meta name="author" content="Westbridge">
 
-    <title>Westbridge – The Future Belongs to the Curious</title>
+    <meta name="google-site-verification"
+        content="psF99YTddhB5aSwHfKLKRGKCCEq-vSiOYa4lyEJ-xE">
 
-    <link rel="stylesheet" href="styles.css">
+    <title>Westbridge — The Future Belongs to the Curious</title>
+
+    <link rel="icon" type="image/png" href="westbridge-logo.png">
+
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
     <!-- NAVIGATION -->
     <header class="navbar">
-        <div class="nav-container">
 
-            <a href="#home" class="brand">
-                <img src="westbridge-logo.png" alt="Westbridge Logo">
-                <span>Westbridge</span>
-            </a>
-
-            <nav class="nav-links">
-                <a href="#about">About</a>
-                <a href="#how-it-works">How It Works</a>
-                <a href="#features">Features</a>
-                <a href="#founder">Founder</a>
-                <a href="#pricing">Pricing</a>
-            </nav>
-
-            <a href="#pricing" class="nav-button">Get Started</a>
-
+        <div class="logo-area">
+            <img src="westbridge-logo.png" alt="Westbridge logo" class="logo">
+            <span class="brand-name">Westbridge</span>
         </div>
+
+        <nav class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#features">Features</a>
+            <a href="#quiz">AI Quiz</a>
+            <a href="#pricing">Pricing</a>
+        </nav>
+
+        <button class="nav-button" onclick="scrollToQuiz()">
+            Start Learning
+        </button>
+
     </header>
 
 
@@ -52,149 +55,124 @@
 
             <div class="hero-content">
 
-                <p class="eyebrow">WELCOME TO WESTBRIDGE</p>
+                <p class="eyebrow">
+                    INTELLIGENCE • CURIOSITY • POSSIBILITY
+                </p>
 
                 <h1>
-                    The future belongs
+                    The future belongs<br>
                     <span>to the curious.</span>
                 </h1>
 
-                <p class="hero-subtitle">
-                    Learn. Understand. Become.
-                </p>
-
-                <p class="hero-description">
-                    Westbridge is a global learning platform designed to bring
-                    intelligent technology, meaningful education, and curiosity
-                    together in one place.
+                <p class="hero-text">
+                    Westbridge brings learning and AI together to help
+                    curious minds understand more, explore further,
+                    and become more capable every day.
                 </p>
 
                 <div class="hero-buttons">
-                    <a href="#pricing" class="button primary-button">
-                        Start Learning
-                    </a>
 
-                    <a href="#about" class="button secondary-button">
+                    <button class="primary-button" onclick="scrollToQuiz()">
+                        Create a Quiz
+                    </button>
+
+                    <a href="#about" class="secondary-button">
                         Discover Westbridge
                     </a>
+
                 </div>
 
             </div>
 
-            <div class="hero-logo">
-                <div class="logo-circle">
-                    <img src="westbridge-logo.png" alt="Westbridge">
+            <div class="hero-card">
+
+                <div class="card-top">
+                    <span class="small-label">WESTBRIDGE AI</span>
+                    <span class="status">● READY</span>
                 </div>
+
+                <div class="brain-icon">
+                    ✦
+                </div>
+
+                <h3>
+                    Turn curiosity<br>
+                    into understanding.
+                </h3>
+
+                <p>
+                    Ask. Explore. Learn. Repeat.
+                </p>
+
+                <div class="mini-stat">
+                    <span>Learning intelligence</span>
+                    <strong>∞</strong>
+                </div>
+
             </div>
+
+        </section>
+
+
+        <!-- INTRO -->
+        <section class="intro">
+
+            <p class="section-label">
+                WELCOME TO WESTBRIDGE
+            </p>
+
+            <h2>
+                Learn. Understand. Become.
+            </h2>
+
+            <p>
+                Learning should be more than memorising information.
+                Westbridge is designed to help people question ideas,
+                test their understanding, and connect what they learn
+                with the wider world.
+            </p>
 
         </section>
 
 
         <!-- ABOUT -->
-        <section id="about" class="section about-section">
+        <section id="about" class="about section">
 
-            <div class="section-heading">
-                <p class="eyebrow">THE WESTBRIDGE IDEA</p>
+            <div class="about-text">
+
+                <p class="section-label">WHY WESTBRIDGE</p>
 
                 <h2>
-                    Learning should lead
-                    <span>somewhere.</span>
+                    A bridge between
+                    <span>curiosity and knowledge.</span>
                 </h2>
 
                 <p>
-                    Westbridge brings together knowledge, curiosity, and
-                    intelligent technology to create a more meaningful way
-                    to learn.
+                    Westbridge combines thoughtful learning experiences
+                    with modern AI technology. Instead of simply giving
+                    answers, the platform is designed to encourage
+                    exploration and deeper understanding.
                 </p>
-            </div>
-
-            <div class="three-cards">
-
-                <article class="info-card">
-                    <div class="card-number">01</div>
-                    <h3>Learn.</h3>
-                    <p>
-                        Discover knowledge through interactive learning
-                        experiences designed to make ideas easier to explore.
-                    </p>
-                </article>
-
-                <article class="info-card">
-                    <div class="card-number">02</div>
-                    <h3>Understand.</h3>
-                    <p>
-                        Go beyond memorising information. Build understanding,
-                        ask better questions, and connect ideas together.
-                    </p>
-                </article>
-
-                <article class="info-card">
-                    <div class="card-number">03</div>
-                    <h3>Become.</h3>
-                    <p>
-                        Turn knowledge into confidence, curiosity, creativity,
-                        and a stronger connection with the world around you.
-                    </p>
-                </article>
-
-            </div>
-
-        </section>
-
-
-        <!-- HOW IT WORKS -->
-        <section id="how-it-works" class="section dark-section">
-
-            <div class="section-heading light-heading">
-                <p class="eyebrow">HOW IT WORKS</p>
-
-                <h2>
-                    A smarter way
-                    <span>to move forward.</span>
-                </h2>
 
                 <p>
-                    Westbridge is built around a simple learning journey.
+                    Whether you're studying a subject, testing your
+                    knowledge, or simply curious about something new,
+                    Westbridge gives you a place to begin.
                 </p>
+
             </div>
 
-            <div class="steps">
+            <div class="about-box">
 
-                <div class="step">
-                    <span>01</span>
-                    <h3>Choose</h3>
-                    <p>
-                        Choose what you want to explore and begin your learning
-                        journey.
-                    </p>
-                </div>
+                <div class="about-number">01</div>
 
-                <div class="step">
-                    <span>02</span>
-                    <h3>Create</h3>
-                    <p>
-                        Generate interactive learning experiences and quizzes
-                        with intelligent technology.
-                    </p>
-                </div>
+                <h3>
+                    Curiosity first.
+                </h3>
 
-                <div class="step">
-                    <span>03</span>
-                    <h3>Understand</h3>
-                    <p>
-                        Use questions, explanations, and exploration to build
-                        deeper understanding.
-                    </p>
-                </div>
-
-                <div class="step">
-                    <span>04</span>
-                    <h3>Grow</h3>
-                    <p>
-                        Keep learning, stay curious, and connect what you learn
-                        to the wider world.
-                    </p>
-                </div>
+                <p>
+                    Every great idea begins with a question.
+                </p>
 
             </div>
 
@@ -202,96 +180,156 @@
 
 
         <!-- FEATURES -->
-        <section id="features" class="section features-section">
+        <section id="features" class="features section">
 
             <div class="section-heading">
 
-                <p class="eyebrow">FEATURES</p>
+                <p class="section-label">
+                    WHAT WESTBRIDGE OFFERS
+                </p>
 
                 <h2>
-                    Intelligence with
-                    <span>purpose.</span>
+                    Built for the way
+                    <span>people learn.</span>
                 </h2>
-
-                <p>
-                    Technology should make learning more meaningful—not more
-                    complicated.
-                </p>
 
             </div>
 
             <div class="feature-grid">
 
-                <article class="feature-card">
-                    <div class="feature-icon">✦</div>
+                <div class="feature-card">
+                    <div class="feature-number">01</div>
+
                     <h3>AI-Powered Quizzes</h3>
-                    <p>
-                        Create personalised quiz experiences to explore and
-                        test your understanding.
-                    </p>
-                </article>
 
-                <article class="feature-card">
-                    <div class="feature-icon">◎</div>
-                    <h3>Smarter Learning</h3>
                     <p>
-                        Turn information into understanding with interactive
-                        and thoughtful learning tools.
+                        Create personalised quizzes to test your
+                        understanding and make studying more interactive.
                     </p>
-                </article>
+                </div>
 
-                <article class="feature-card">
-                    <div class="feature-icon">◌</div>
-                    <h3>Global Perspective</h3>
-                    <p>
-                        Connect learning with ideas, people, technology, and
-                        the world beyond the classroom.
-                    </p>
-                </article>
 
-                <article class="feature-card">
-                    <div class="feature-icon">∞</div>
-                    <h3>Built for Everyone</h3>
+                <div class="feature-card">
+                    <div class="feature-number">02</div>
+
+                    <h3>Learn Through Questions</h3>
+
                     <p>
-                        Westbridge is designed with a worldwide audience in
-                        mind, wherever their learning journey begins.
+                        Turn curiosity into exploration with questions
+                        designed to help you think beyond memorisation.
                     </p>
-                </article>
+                </div>
+
+
+                <div class="feature-card">
+                    <div class="feature-number">03</div>
+
+                    <h3>Explore Any Subject</h3>
+
+                    <p>
+                        From science and history to technology and
+                        everyday knowledge, keep exploring.
+                    </p>
+                </div>
+
+
+                <div class="feature-card">
+                    <div class="feature-number">04</div>
+
+                    <h3>Designed for Everyone</h3>
+
+                    <p>
+                        Westbridge is built with a global audience in
+                        mind — because curiosity has no age or boundary.
+                    </p>
+                </div>
 
             </div>
 
         </section>
 
 
-        <!-- FOUNDER -->
-        <section id="founder" class="section founder-section">
+        <!-- QUIZ GENERATOR -->
+        <section id="quiz" class="quiz-section">
 
-            <div class="founder-card">
+            <div class="quiz-container">
 
-                <div class="founder-logo">
-                    <img src="westbridge-logo.png" alt="Westbridge Logo">
-                </div>
+                <div class="quiz-intro">
 
-                <div class="founder-content">
-
-                    <p class="eyebrow">THE FOUNDER</p>
+                    <p class="section-label">
+                        WESTBRIDGE AI
+                    </p>
 
                     <h2>
-                        A vision for
-                        <span>curious minds.</span>
+                        Create your
+                        <span>own quiz.</span>
                     </h2>
 
                     <p>
-                        Created by Minal Majid, Westbridge is being developed
-                        with a vision of bringing intelligent, accessible, and
-                        meaningful learning tools to people around the world.
-                    </p>
-
-                    <p class="founder-quote">
-                        “The future belongs to the curious.”
+                        Enter a subject and let Westbridge create a
+                        quick learning experience for you.
                     </p>
 
                 </div>
+
+
+                <div class="quiz-box">
+
+                    <label for="topic">
+                        What would you like to learn?
+                    </label>
+
+                    <input
+                        type="text"
+                        id="topic"
+                        placeholder="e.g. The Solar System"
+                    >
+
+                    <label for="difficulty">
+                        Difficulty
+                    </label>
+
+                    <select id="difficulty">
+                        <option value="Easy">Easy</option>
+                        <option value="Medium" selected>Medium</option>
+                        <option value="Hard">Hard</option>
+                    </select>
+
+                    <button class="generate-button" onclick="generateQuiz()">
+                        Generate Quiz
+                    </button>
+
+                    <div id="quiz-result" class="quiz-result">
+                        <p>
+                            Your quiz will appear here.
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- VISION -->
+        <section class="vision">
+
+            <div class="vision-content">
+
+                <p class="section-label">
+                    THE WESTBRIDGE VISION
+                </p>
+
+                <h2>
+                    A world where
+                    <span>curiosity never stops.</span>
+                </h2>
+
+                <p>
+                    We believe technology should not replace curiosity.
+                    It should amplify it.
+                </p>
 
             </div>
 
@@ -299,168 +337,121 @@
 
 
         <!-- PRICING -->
-        <section id="pricing" class="section pricing-section">
+        <section id="pricing" class="pricing section">
 
             <div class="section-heading">
 
-                <p class="eyebrow">MEMBERSHIP</p>
+                <p class="section-label">
+                    SIMPLE PLANS
+                </p>
 
                 <h2>
-                    Choose your way to
-                    <span>learn.</span>
+                    Choose your
+                    <span>way to learn.</span>
                 </h2>
-
-                <p>
-                    Start for free and unlock more possibilities as your
-                    learning journey grows.
-                </p>
 
             </div>
 
+
             <div class="pricing-grid">
 
-                <!-- EXPLORER -->
-                <article class="pricing-card">
+                <div class="price-card">
 
-                    <p class="plan-name">EXPLORER</p>
+                    <p class="plan-name">FREE</p>
 
-                    <div class="price">
-                        <span>$0</span>
-                        <small>/ month</small>
-                    </div>
+                    <h3>$0</h3>
 
-                    <p class="plan-description">
-                        Begin your learning journey.
+                    <p class="price-description">
+                        Start exploring Westbridge.
                     </p>
 
                     <ul>
-                        <li>10 AI quiz generations/month</li>
-                        <li>Core learning tools</li>
-                        <li>Explore Westbridge</li>
-                        <li>Free forever</li>
+                        <li>✓ 10 AI quiz generations</li>
+                        <li>✓ Basic learning tools</li>
+                        <li>✓ Explore subjects</li>
                     </ul>
 
-                    <button class="plan-button" data-plan="Explorer">
-                        Start Free
+                    <button onclick="scrollToQuiz()">
+                        Get Started
                     </button>
 
-                </article>
+                </div>
 
 
-                <!-- SCHOLAR -->
-                <article class="pricing-card popular">
+                <div class="price-card featured">
 
-                    <div class="popular-label">
+                    <div class="popular">
                         MOST POPULAR
                     </div>
 
-                    <p class="plan-name">SCHOLAR</p>
+                    <p class="plan-name">PRO</p>
 
-                    <div class="price">
-                        <span>$12</span>
-                        <small>/ month</small>
-                    </div>
+                    <h3>$12</h3>
 
-                    <p class="plan-description">
-                        For learners who want more.
+                    <p class="price-description">
+                        For curious minds who want more.
                     </p>
 
                     <ul>
-                        <li>100 AI quiz generations/month</li>
-                        <li>Expanded learning tools</li>
-                        <li>More personalised experiences</li>
-                        <li>Priority access to new features</li>
+                        <li>✓ Unlimited quizzes</li>
+                        <li>✓ Advanced AI tools</li>
+                        <li>✓ Personalised learning</li>
+                        <li>✓ Progress insights</li>
                     </ul>
 
-                    <button class="plan-button" data-plan="Scholar">
-                        Choose Scholar
+                    <button onclick="choosePlan('Pro')">
+                        Choose Pro
                     </button>
 
-                </article>
+                </div>
 
 
-                <!-- FELLOW -->
-                <article class="pricing-card">
+                <div class="price-card">
 
-                    <p class="plan-name">FELLOW</p>
+                    <p class="plan-name">PREMIUM</p>
 
-                    <div class="price">
-                        <span>$25</span>
-                        <small>/ month</small>
-                    </div>
+                    <h3>$25</h3>
 
-                    <p class="plan-description">
-                        For deeper learning and exploration.
+                    <p class="price-description">
+                        A deeper learning experience.
                     </p>
 
                     <ul>
-                        <li>Unlimited AI quiz generations</li>
-                        <li>Advanced learning tools</li>
-                        <li>Enhanced personalisation</li>
-                        <li>Early access to selected features</li>
+                        <li>✓ Everything in Pro</li>
+                        <li>✓ Advanced learning features</li>
+                        <li>✓ Priority access</li>
+                        <li>✓ Premium experiences</li>
                     </ul>
 
-                    <button class="plan-button" data-plan="Fellow">
-                        Choose Fellow
+                    <button onclick="choosePlan('Premium')">
+                        Choose Premium
                     </button>
 
-                </article>
-
-
-                <!-- WESTBRIDGE -->
-                <article class="pricing-card">
-
-                    <p class="plan-name">WESTBRIDGE</p>
-
-                    <div class="price">
-                        <span>$49</span>
-                        <small>/ month</small>
-                    </div>
-
-                    <p class="plan-description">
-                        The complete Westbridge experience.
-                    </p>
-
-                    <ul>
-                        <li>Unlimited AI quiz generations</li>
-                        <li>Full learning experience</li>
-                        <li>Advanced features</li>
-                        <li>Priority new-feature access</li>
-                    </ul>
-
-                    <button class="plan-button" data-plan="Westbridge">
-                        Choose Westbridge
-                    </button>
-
-                </article>
+                </div>
 
             </div>
 
         </section>
 
 
-        <!-- FINAL CTA -->
-        <section class="cta-section">
+        <!-- CTA -->
+        <section class="final-cta">
 
-            <div class="cta-content">
+            <p class="section-label">
+                YOUR NEXT QUESTION COULD CHANGE EVERYTHING
+            </p>
 
-                <p class="eyebrow">YOUR JOURNEY STARTS HERE</p>
+            <h2>
+                Stay curious.
+            </h2>
 
-                <h2>
-                    Stay curious.
-                    <span>Go further.</span>
-                </h2>
+            <p>
+                Start exploring with Westbridge.
+            </p>
 
-                <p>
-                    Learning is not simply about knowing more.
-                    It is about becoming more curious about the world.
-                </p>
-
-                <a href="#pricing" class="button primary-button">
-                    Explore Westbridge
-                </a>
-
-            </div>
+            <button class="primary-button" onclick="scrollToQuiz()">
+                Begin Exploring
+            </button>
 
         </section>
 
@@ -468,28 +459,43 @@
 
 
     <!-- FOOTER -->
-    <footer class="footer">
+    <footer>
 
-        <div class="footer-inner">
+        <div class="footer-brand">
 
-            <div class="footer-brand">
+            <div class="logo-area">
 
-                <img src="westbridge-logo.png" alt="Westbridge Logo">
+                <img
+                    src="westbridge-logo.png"
+                    alt="Westbridge logo"
+                    class="logo">
 
-                <div>
-                    <strong>Westbridge</strong>
-
-                    <p>
-                        The future belongs to the curious.
-                    </p>
-                </div>
+                <span class="brand-name">
+                    Westbridge
+                </span>
 
             </div>
 
-            <p class="copyright">
-                © 2026 Westbridge. All rights reserved.
+            <p>
+                The future belongs to the curious.
             </p>
 
+        </div>
+
+
+        <div class="footer-links">
+
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#features">Features</a>
+            <a href="#quiz">AI Quiz</a>
+            <a href="#pricing">Pricing</a>
+
+        </div>
+
+
+        <div class="copyright">
+            © <span id="year"></span> Westbridge. All rights reserved.
         </div>
 
     </footer>
